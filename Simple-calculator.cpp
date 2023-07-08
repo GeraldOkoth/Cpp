@@ -1,29 +1,61 @@
 #include <iostream>
 using namespace std;
 
+//Prints the result of operation on two numbers
 int main() {
-	int x, y, sum; //Declare three variables 
-  	cout << "Type a number: ";
-  	cin >> x; //Get and store first input from the user in variable x
-  	cout << "Type another number: ";
-  	cin >> y; //Get and store second input from the user in variable y
-  	sum = x + y; //Calculate sum of two inputs
-  	cout << "Sum is: " << sum; //Output sum
-  	return 0;
-//Alternative code	
-/*#include <iostream>
+    int num1, num2; //Declare three variables
+    //int result = num1 + num2;
+    char myOperator;
+  	cout << "Enter a number: " << endl << endl;
+  	cin >> num1; //Get and store first input from the user in variable num1.
+  	if (num1 <= 0)
+    {
+        cout << "You entered an invalid number!" << endl;
+        exit(0);
+    }
+    else
+    {
+        cout << endl << "Type an operator: " << endl << endl; //Get an operator from the user.
+        cin >> myOperator;
+        if (myOperator != '+' && myOperator != '-' && myOperator != '/' && myOperator != '*') //Check whether the user typed in a valid operator.
+        {
+            cout << "You typed an invalid operator!" << endl;
+            cout << "Please type in a valid operator!" << endl;
+            exit(0);
+        }
+        else
+        {
+            cout << endl << "Enter another number: " << endl << endl;
+            cin >> num2; //Get and store second input from the user in variable num2*/
+            if (num2 <= 0)
+                {
+                    cout << "You entered an invalid number!" << endl;
+                    exit(0);
+                }
+        }
+    }
+    int result;
+  	switch (myOperator)
+  	{
+  	    case '+':
+  	        result = num1 + num2;
+  	        cout << "Sum = " << result << endl;
+  	        break;
 
-int main()
-{
-        int x, y, sum;
+        case '-':
+            result = num1 - num2;
+            cout << "Difference = " << result << endl;
+            break;
 
-        std::cout << "Input the first number: ";
-        std::cin >> x;
-        std::cout << "Input the second number ";
-        std::cin >> y;
-        sum = x+y;
-        std::cout << "The sum is: " << sum;
-        return 0;
-}*/
+  	    case '*':
+  	        result = num1 * num2;
+  	        cout << "Product = " << result << endl;
+            break;
+
+  	    case '/':
+  	        result = num1 / num2;
+  	        cout << "Quotient = " << result << endl;
+            break;
+    }
+    return 0;
 }
-
