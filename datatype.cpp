@@ -59,8 +59,8 @@ int main(void)
     //Prints the size of various data types.
     //Alternative code using switch statement.
 
-/*
-#include <iostream>
+
+/*#include <iostream>
 #include <string>
 using namespace std;
 
@@ -116,9 +116,10 @@ int main(void)
                 break;
         }
     }
-
     return 0;
 }
+*/
+
 
 //Alternative code.
 
@@ -144,4 +145,3 @@ int main(void)
     return 0;
 }
 */
-
