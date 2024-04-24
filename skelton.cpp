@@ -1,40 +1,41 @@
 #include<iostream>
 
+
 using namespace std;
 class student
 {
 private:
 	int admno;
-	string sname;
-	float eng ,math, science;
+	char sname[20];
+	float eng,math,science;
 	float total;
 	float ctotal()
 	{
-		return eng + math + science;
+		return eng+math+science;
 	}
 public:
-	void takeData()
+	void Takedata()
 	{
-		cout << "Enter admission number: ";
-		cin >> admno;
-		cout << "Enter student name: ";
-		cin >> sname; //getline(cin, sname);
-		cout << "Enter marks in english, math, science "  << endl;
-		cin >> eng >> math >> science;
-		total = ctotal();
+		cout<<"Enter admission number ";
+		cin>> admno;
+		cout<<"Enter student name " ;
+		gets(sname);
+		cout<< "Enter marks in english, math, science ";
+		cin>>eng>>math>>science;
+		total=ctotal();
 	}
 	void Showdata()
 	{
-		cout << "Admission number " << admno << "\nStudent name " << sname << "\nEnglish "
-			<< eng << "\nMath "<< math <<"\nScience " << science << "\nTotal " << total;
+		cout<<"Admission number "<<admno<<"\nStudent name "<<sname<<"\nEnglish "
+			<<eng<<"\nMath "<<math<<"\nScience "<<science<<"\nTotal "<<total;
 	}
 };
 int main ()
 {
-	//clrscr();
+	clrscr();
 	student obj ;
-	obj.takeData();
+	obj.Takedata();
 	obj.Showdata();
-	//getch();
+	getch();
 	return 0;
 }

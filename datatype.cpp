@@ -5,8 +5,8 @@ using namespace std;
 int main(void)
 {
     string myDataType; //declare a string variable to store the data type entered by the user.
-    cout << "Size of data types." << endl << endl;
-    cout << "Enter the data type you want size printed." << endl; //Prompt a user to enter a data type.
+    cout << "Size of data types:" << endl << endl;
+    cout << "Enter the data type you want size printed:" << endl; //Prompt a user to enter a data type.
     getline(cin, myDataType); //Accept user input from the console.
     //Check for the validity of the data type.
     if (myDataType != "int" && myDataType != "char" && myDataType != "float" && myDataType != "double" && myDataType != "short" && myDataType != "long" && myDataType != "bool" && myDataType != "long int" && myDataType != "long double")
