@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
     // Iterate through numbers from 2 to 100
-    for (int num = 2; num <= 100; ++num) {
+    for (int num = 2; num <= 100; num++) {
         cout << "Factors of " << num << " are: ";
 
         // Find factors of the current number
