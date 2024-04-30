@@ -31,3 +31,36 @@ int interest(int principal, int intRate, int time)
 
     return interest1;
 }
+
+int principal;
+    int rate;
+    int time;
+    int interest;
+
+    cout << "Please enter the principal amount:ksh. ";
+    cin >> principal;
+    cout << "Please enter the rate: ";
+    cin >> rate;
+    cout << "Please enter time: ";
+    cin >> time;
+
+    interest = (principal*rate*time)/100;
+    cout <<endl << "The simple interest is ksh. " << interest << " from the details you input: " << endl <<"principal:ksh. " <<principal <<endl  << "rate: " <<rate <<"%" <<endl  << "time: "  <<time <<"years" <<endl;
+
+    return 0;
+
+    int bonus = 200;
+    int commission;
+    int grossSales;
+    float earnings;
+
+    cout <<"Enter your gross sales for last week: " <<endl;
+    cin >> grossSales;
+
+    commission = (9 * grossSales)/100;
+    earnings = commission + bonus;
+
+    cout << "Your earnings for last week is: " <<earnings <<endl;
+
+    return 0;
+
