@@ -1,3 +1,3 @@
-## **Introduction to C++ programming**
+## **C++ programming**
 
-This is a complete introduction to c++ programming language
+This is repository contains simple Cpp projects and files, an implementation of basic C++ programming.
