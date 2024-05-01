@@ -1,5 +1,11 @@
 #include <bits/stdc++.h>
+
 using namespace std;
+/**
+ * Program to implement use of arrays
+ *
+ *
+ */
 
 // to check whether all sits are occupied or not
 int allOccupied(char arr[7][5]){
