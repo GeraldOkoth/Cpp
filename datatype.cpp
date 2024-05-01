@@ -1,5 +1,9 @@
 #include <iostream>
 #include <string>
+/**
+ * Program to print the sizes of different data types.
+ *
+ */
 using namespace std;
 
 int main(void)
@@ -19,49 +23,50 @@ int main(void)
         {
             cout << "Size of " << myDataType << " = "  << sizeof(int) << " byte(s)" << endl;
         }
-    else if (myDataType == "char")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(char) << " byte(s)" << endl;
-    }
-    else if (myDataType == "float")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(float) << " byte(s)" << endl;
-    }
-    else if (myDataType == "double")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(double) << " byte(s)" << endl;
-    }
-    else if (myDataType == "bool")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(bool) << " byte(s)" << endl;
-    }
-    else if (myDataType == "short")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(short) << " byte(s)" << endl;
-    }
-    else if (myDataType == "long")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(long) << " byte(s)" << endl;
-    }
-    else if (myDataType == "long int")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(long int) << " byte(s)" << endl;
-    }
-    else if (myDataType == "long double")
-    {
-        cout << "Size of " << myDataType << " = "  << sizeof(long double) << " byte(s)" << endl;
-    }
+        else if (myDataType == "char")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(char) << " byte(s)" << endl;
+        }
+        else if (myDataType == "float")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(float) << " byte(s)" << endl;
+        }
+        else if (myDataType == "double")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(double) << " byte(s)" << endl;
+        }
+        else if (myDataType == "bool")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(bool) << " byte(s)" << endl;
+        }
+        else if (myDataType == "short")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(short) << " byte(s)" << endl;
+        }
+        else if (myDataType == "long")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(long) << " byte(s)" << endl;
+        }
+        else if (myDataType == "long int")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(long int) << " byte(s)" << endl;
+        }
+        else if (myDataType == "long double")
+        {
+            cout << "Size of " << myDataType << " = "  << sizeof(long double) << " byte(s)" << endl;
+        }
     }
     return 0;
 }
 
 
-    //Prints the size of various data types.
-    //Alternative code using switch statement.
+//Prints the size of various data types.
+//Alternative code using switch statement.
 
 
 /*#include <iostream>
 #include <string>
+
 using namespace std;
 
 int main(void)
@@ -126,6 +131,7 @@ int main(void)
 /*
 #include <iostream>
 #include <string>
+
 using namespace std;
 
 int main(void)
